@@ -18,8 +18,6 @@ Esse projeto é uma inspiração de um app mobile sobre pokémons, tal [layout](
 
 ### Funcionalidades
 
-- [x] **Listagem dos pokémons**: Listar os pokémons com o uso da API REST.
-
 ## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
