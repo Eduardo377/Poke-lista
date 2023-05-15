@@ -12,11 +12,13 @@ Desenvolver uma plataforma web para listagem e visualização de pokémons. Todo
 
 Esse projeto é uma inspiração de um app mobile sobre pokémons, tal [layout](https://www.behance.net/gallery/95727849/Pokdex-App) foi criado a partir de um desafio proposto pela equipe do [Devemdobro](https://devemdobro.com//).
 
+### Deploy
+
+Clique aqui 👉 [Deploy](https://eduardo377.github.io/pokedex//) para ver a aplicação funcionando.
+
 ### Funcionalidades
 
 - [x] **Listagem dos pokémons**: Listar os pokémons com o uso da API REST.
-
-### Funcionalidades
 
 ## 📝 Licença
 
