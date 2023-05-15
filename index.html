@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="Listagem de pokemons com o uso da pokeApi" />
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <link rel="stylesheet" href="./src/styles/scrollbar.css">
 
     <title>POKEDEX</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +21,7 @@
 <body>
     <header>
         <a href="#">
-            <img src="./src/assets/pokeball.png" alt="pokebola">
+            <img src="./src/assets/pokeball.png" alt="pokebola" class="logo">
         </a>
         <button id="botao-alterar-tema">
             <img src="./src/assets/sun.png" alt="imagem do sol" class="imagem-botao">
@@ -32,12 +35,12 @@
                     <span>#001</span>
                 </div>
                 <img src="./src/assets/bulbasaur.gif" alt="Bulbasaur" class="gif">
+                <ul class="tipos">
+                    <li class="tipo grama">Grama</li>
+                    <li class="tipo veneno">Veneno</li>
+                </ul>
+                <p class="descricao">Há uma semente em suas constas desde do dia que esse pókemon nasce. A semente cresce lentamente</p>
             </li>
-            <ul class="tipos">
-                <li class="tipo-grama">Grama</li>
-                <li class="tipo-veneno">Veneno</li>
-            </ul>
-            <p class="descricao">Há uma semente em suas constas desde do dia que esse pókemon nasce. A semente cresce lentamente</p>
 
             <li class="cartao-pokemon">
                 <div class="informacoes">
@@ -45,12 +48,12 @@
                     <span>#002</span>
                 </div>
                 <img src="./src/assets/ivysaur.gif" alt="Ivysaur" class="gif">
+                <ul class="tipos">
+                    <li class="tipo grama">Grama</li>
+                    <li class="tipo veneno">Veneno</li>
+                </ul>
+                <p class="descricao">Quando o bulbo em suas costas cresce, parece perder a sua capacidade de ficar de pé em suas patas traseiras</p>
             </li>
-            <ul class="tipos">
-                <li class="tipo-grama">Grama</li>
-                <li class="tipo-veneno">Veneno</li>
-            </ul>
-            <p class="descricao">Quando o bulbo em suas costas cresce, parece perder a sua capacidade de ficar de pé em suas patas traseiras</p>
 
             <li class="cartao-pokemon">
                 <div class="informacoes">
@@ -58,12 +61,12 @@
                     <span>#003</span>
                 </div>
                 <img src="./src/assets/venusaur.gif" alt="Venusaur" class="gif">
+                <ul class="tipos">
+                    <li class="tipo grama">Grama</li>
+                    <li class="tipo veneno">Veneno</li>
+                </ul>
+                <p class="descricao"> Sua planta floresce quando está absorvendo energia solar. Permanece em movimento para buscar luz solar.</p>
             </li>
-            <ul class="tipos">
-                <li class="tipo-grama">Grama</li>
-                <li class="tipo-veneno">Veneno</li>
-            </ul>
-            <p class="descricao"> Sua planta floresce quando está absorvendo energia solar. Permanece em movimento para buscar luz solar.</p>
 
             <li class="cartao-pokemon">
                 <div class="informacoes">
@@ -71,11 +74,11 @@
                     <span>#004</span>
                 </div>
                 <img src="./src/assets/charmander.gif" alt="Charmander" class="gif">
+                <ul class="tipos">
+                    <li class="tipo fogo">fogo</li>
+                </ul>
+                <p class="descricao">Tem preferência por coisas quentes. Quando chove, diz-se sua cauda expeli vapor.</p>
             </li>
-            <ul class="tipos">
-                <li class="tipo-fogo">fogo</li>
-            </ul>
-            <p class="descricao">Tem preferência por coisas quentes. Quando chove, diz-se sua cauda expeli vapor.</p>
 
             <li class="cartao-pokemon">
                 <div class="informacoes">
@@ -83,11 +86,12 @@
                     <span>#005</span>
                 </div>
                 <img src="./src/assets/charmeleon.gif" alt="Charmeleon" class="gif">
+                <ul class="tipos">
+                    <li class="tipo fogo">fogo</li>
+                </ul>
+                <p class="descricao">Charmeleon é um pequeno Pokémon bípede semelhante a um dinossauro com uma aparência semelhante à de sua forma pré-evoluída, Charmander . Charmeleon difere de Charmander por ter uma cor de pele vermelha muito mais escura, uma estrutura
+                    corporal maior, garras e uma saliência semelhante a um chifre na parte de trás da cabeça, semelhante à de um ornitópode . Suas garras são afiadas como navalhas e sua cauda é muito forte.</p>
             </li>
-            <ul class="tipos">
-                <li class="tipo-fogo">fogo</li>
-            </ul>
-            <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 
             <li class="cartao-pokemon">
                 <div class="informacoes">
@@ -95,11 +99,13 @@
                     <span>#006</span>
                 </div>
                 <img src="./src/assets/charizard.gif" alt="Charizard" class="gif">
+                <ul class="tipos">
+                    <li class="tipo fogo">fogo</li>
+                </ul>
+                <p class="descricao">Charizard são nobres e não usarão todo o poder de suas chamas em oponentes significativamente mais fracos do que eles. Charizards também são conhecidos por serem muito ansiosos para a batalha. Charizard procura inimigos mais fortes e só
+                    respira fogo durante as batalhas com oponentes dignos. A respiração ardente é tão quente que pode transformar qualquer material em escória. Eles podem ser muito perigosos e agressivos se provocados. Mas como Charmander e Charmeleon
+                    , é amigável e carinhoso com seu treinador . Charizard só ignora seu treinador se sentir que seu treinador não se importa com isso. Apenas um Charizard fraco mostra seu poder, como disse Liza em Charizard's Burning Ambitions ..</p>
             </li>
-            <ul class="tipos">
-                <li class="tipo-fogo">fogo</li>
-            </ul>
-            <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 
             <li class="cartao-pokemon">
                 <div class="informacoes">
@@ -107,11 +113,11 @@
                     <span>#007</span>
                 </div>
                 <img src="./src/assets/squirtle.gif" alt="Squirtle" class="gif">
+                <ul class="tipos">
+                    <li class="tipo agua">água</li>
+                </ul>
+                <p class="descricao">Sua carapaça é altamente resistente, então ele pode se esconder dentro dela para se proteger de ataques físicos. Ele também pode se equilibrar em sua cauda.</p>
             </li>
-            <ul class="tipos">
-                <li class="tipo-agua">água</li>
-            </ul>
-            <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 
             <li class="cartao-pokemon">
                 <div class="informacoes">
@@ -119,11 +125,12 @@
                     <span>#008</span>
                 </div>
                 <img src="./src/assets/wartortle.gif" alt="Wartortle" class="gif">
+                <ul class="tipos">
+                    <li class="tipo agua">água</li>
+                </ul>
+                <p class="descricao">Eles usam a água para se camuflar antes de atacar as presas e nadar rapidamente atrás delas, usando suas orelhas e caudas para se equilibrar. Os Wartortles se orgulham de conchas arranhadas, pois mostram resistência em batalha. Geralmente,
+                    acredita-se que quanto mais arranhões um Wartortle ganhar durante esse estágio, mais forte ele será após a evolução.</p>
             </li>
-            <ul class="tipos">
-                <li class="tipo-agua">água</li>
-            </ul>
-            <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 
             <li class="cartao-pokemon">
                 <div class="informacoes">
@@ -131,11 +138,12 @@
                     <span>#009</span>
                 </div>
                 <img src="./src/assets/blastoise.gif" alt="blastoise" class="gif">
+                <ul class="tipos">
+                    <li class="tipo agua">água</li>
+                </ul>
+                <p class="descricao">Blastoise pode assumir o papel de líder em grandes grupos de Squirtle e Wartortle. Seu habitat preferido parece ser lagoas e lagos de água doce. Blastoise são Pokémon vigilantes. Eles não gostam de humanos em seu território, mas não atacarão
+                    a menos que sejam provocados. Eles tendem a lutar quando sentem o perigo.</p>
             </li>
-            <ul class="tipos">
-                <li class="tipo-agua">água</li>
-            </ul>
-            <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
 
             <li class="cartao-pokemon">
                 <div class="informacoes">
@@ -143,11 +151,12 @@
                     <span>#010</span>
                 </div>
                 <img src="./src/assets/caterpie.gif" alt="Caterpie" class="gif">
+                <ul class="tipos">
+                    <li class="tipo inseto">inseto</li>
+                </ul>
+                <p class="descricao">Caterpie é uma lagarta estilizada, mais parecida com um rabo de andorinha asiático. Sua "antena" é um osmeterium, um órgão exclusivo das lagartas rabo de andorinha que, como Caterpie, usam para emitir um odor fétido. A ponta da cauda de
+                    Caterpie se assemelha ao chifre na extremidade traseira da maioria das espécies de larvas de mariposa-falcão.</p>
             </li>
-            <ul class="tipos">
-                <li class="tipo-inseto">inseto</li>
-            </ul>
-            <p class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         </ul>
     </main>
 </body>
